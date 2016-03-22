@@ -1,4 +1,4 @@
-package com.nl.controller;
+package nl.controller;
 
 import static org.junit.Assert.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

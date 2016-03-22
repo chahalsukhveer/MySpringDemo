@@ -1,6 +1,6 @@
-package com.nl.entity;
+package nl.entity;
 
-public class TestPojo {
+public class MainPojo {
 	private String value;
 
 	public String getValue() {
