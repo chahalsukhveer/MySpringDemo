@@ -15,7 +15,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "/test-dispatcher-servlet.xml")
+@ContextConfiguration("/test-dispatcher-servlet.xml")
 @WebAppConfiguration
 public class BaseTestCase{
 
