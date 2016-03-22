@@ -8,7 +8,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.test.context.web.WebAppConfiguration;
 
+@WebAppConfiguration
 public class DemoControllerTest extends BaseTestCase {
 
 	@Before

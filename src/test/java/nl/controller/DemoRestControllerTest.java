@@ -6,7 +6,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.hamcrest.Matchers.*;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.test.context.web.WebAppConfiguration;
 
+@WebAppConfiguration
 public class DemoRestControllerTest extends BaseTestCase{
 
 	@Before
@@ -19,8 +21,7 @@ public class DemoRestControllerTest extends BaseTestCase{
     public void getJSONDataTest() throws Exception {
         this.mockMvc.perform(get("/rest/working"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(1)))
-                .andExpect(jsonPath("$[0].value", is("It works")));
+                .andExpect(jsonPath("$.value", is("It works")));
     }
 
 }
